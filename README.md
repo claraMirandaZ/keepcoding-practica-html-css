@@ -35,6 +35,7 @@ Nuestro objetivo es construir un portfolio sobre nosotros, con las siguientes se
     - Teléfono (**requerido**).
 
 6. Unos `radiobutton` para responder a la pregunta "_¿Cómo me conociste?_" (**requerido**).
+
     -[ ] Universidad.
 
     -[ ] Keepcoding kick-off.
