@@ -1,0 +1,12 @@
+/* CSS variables: Ravenclaw color palette */
+:root {
+  --maastricht-blue: #0e1a40;
+  --cobalt-blue: #223053;
+  --intense-bronze: #C5832B;
+  --ochre-yellow: #B5904B;
+  --covert-black: #16161B;
+}
+
+img {
+  width: 50px;
+}

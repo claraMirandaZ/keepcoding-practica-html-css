@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -11,8 +11,154 @@
 
 </head>
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+  <header class="header">
+    <div class="logo_container">
+      <img class="logo" src="images/spectrespecs-favicon-color.png" alt="spectrespecs" title="spectrespecs-logo"/>
+    </div>
+
+    <div class="navmenu_container">
+      <nav class="navbar">      
+        <ul class="nav_menu">
+          <li class="dropdown_item"><a href="#bio">Bio</a></li>
+          <li class="dropdown_item"><a href="#skills">Skills</a></li>
+          <li class="dropdown_item"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="hamburger_menu"></nav>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="about_section">
+      <article class="about">
+        <h3 class="about_title">About me</h3>
+        <p class="bio">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus non, tempora temporibus recusandae dolorum ab totam ad nam maxime dolor ex molestiae est velit, quam aliquam numquam distinctio, dolores at.</p>
+      </article>
+    </section>
+
+    <section class="skills_section">
+      <h3 class="skills_title">Magical abilities</h3>
+
+      <img class="skill_img" src="images/potion-icon.png" alt="Potion icon" title="A love potion"/>
+      <article class="skill_article">
+        <span class="skill_name">Potion making</span>
+        <div class="skill_container">
+          <div class="skill"></div>
+        </div>
+      </article>
+
+      <img class="skill_img" src="images/crystal-ball-icon.png" alt="Crystal ball icon" title="The art of divination"/>
+      <article class="skill_article">
+        <span class="skill_name">Divination</span>
+        <div class="skill_container">
+          <div class="skill"></div>
+        </div>
+      </article>
+
+      <img class="skill_img" src="images/snitch-icon.png" alt="Snitch icon" title="The slippery snitch"/>
+      <article class="skill_article">
+        <span class="skill_name">Quidditch</span>
+        <div class="skill_container">
+          <div class="skill"></div>
+        </div>
+      </article>
+
+      <img class="skill_img" src="images/dark-mark-icon.png" alt="Dark mark icon" title="Only Death eaters use this..."/>
+      <article class="skill_article">
+        <span class="skill_name">Dark Arts</span>
+        <div class="skill_container">
+          <div class="skill"></div>
+        </div>
+      </article>
+
+      <img class="skill_img" src="images/daily-prophet-icon.png" alt="Newspaper icon" title="The Quibbler"/>
+      <article class="skill_article">
+        <span class="skill_name">Quibbler editorial management</span>
+        <div class="skill_container">
+          <div class="skill"></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="where_section">
+      <h3 class="where_title">Where did you meet me?</h3>
+
+      <div class="where_container">
+        <input class="where_input" type="radio" class="radio"/>
+        <label for="" class="where">Florean Fortescue's Ice Cream Parlour</label>
+      </div>
+
+      <div class="where_container">
+        <input class="where_input" type="radio" class="radio"/>
+        <label for="" class="where">Hogwarts Express</label>
+      </div>
+
+      <div class="where_container">
+        <input class="where_input" type="radio" class="radio"/>
+        <label for="" class="where">The Sorting Ceremony</label>
+      </div>
+
+      <div class="where_container">
+        <input class="where_input" type="radio" class="radio"/>
+        <label for="" class="where">By the Whomping Willow</label>
+      </div>
+
+      <div class="where_container">
+        <input class="where_input" type="radio" class="radio"/>
+        <label for="" class="where">Wandering the castle</label>
+      </div>
+    </section>
+
+    <section>
+      <h3 class="info_title">Tell me about you</h3>
+      <form class="info" action="#" method="post">
+        <fieldset class="data">
+          <div>
+            <label for="name">Name</label>
+            <input required id="name" name="name" type="text" placeholder="Neville">
+          </div>
+          <div>
+              <label for="lastName">Family name</label>
+              <input required id="lastName" name="lastName" type="text" placeholder="Longbottom">
+          </div>
+          <div>
+              <label for="phoneNumber">Muggle phone-thingy number</label>
+              <input required id="phoneNumber" name="phoneNumber" type="number" placeholder="Whateverthatis number" minlength="9">
+          </div>
+          <div>
+              <label for="gitHub">GitHub thingamajig</label>
+              <input id="gitHub" name="GitHub" type="text" placeholder="@username" pattern="^@[^\s]+">
+          </div>
+        </fieldset>
+        <fieldset class="message">
+          <img src="images/quill-icon.png" alt="Quill icon" title="Write to me!"/>
+          <label for="">Send me an owl!</label>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+
+          <img src="images/owl-icon.png" alt="Owl icon" title="Choose a screech owl"/>
+          <input type="button" value="submit" name="submit"/>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <span class="authorship">Made with 💜 by Clara Miranda Zapata</span>
+    </div>
+    <div>
+      <a href="https://www.linkedin.com/in/claramirandazapata/" target="_blank">
+        <img class="social_logo" src="images/linkedin-logo.png" alt="LinkedIn logo" title="Check out my professional profile"/>
+      </a>
+      <a href="https://github.com/claraMirandaZ" target="_blank">
+        <img class="social_logo" src="images/github-logo.png" alt="GitHub logo" title="Browse more of my projects"/>
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
