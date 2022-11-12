@@ -217,6 +217,69 @@ img {
   padding: 5px;
 }
 
+/* Section: form */
+.form_section {
+  background-color: var(--cobalt-blue);
+  padding: 8px;
+}
+
+.info_title {
+  color: var(--ochre-yellow);
+  font-family: var(--shrikhand);
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 8px 0;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+}
+
+.data_container {
+  margin: 6px 6px;
+}
+
+.info_label {
+  color: var(--intense-bronze);
+  font-size: 14px;
+}
+
+.info_input {
+  background-color: #E6E6FA;
+}
+
+.info_input::placeholder {
+  color: var(--maastricht-blue);
+  opacity: 0.5;
+  font-style: italic;
+}
+
+.message_section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.message_img {
+  height: 35px;
+  padding: 5px;
+}
+
+.message_label {
+  color: var(--ochre-yellow);
+  font-family: var(--gochi-hand);
+  font-size: 1.5rem;
+}
+
+.owl_icon {
+  height: 25px;
+  padding: 5px;
+}
+
+.send_container {
+  display: flex;
+}
+
 /* *************************** */
 /*        MEDIAQUERIES         */
 /* *************************** */

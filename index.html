@@ -126,40 +126,47 @@
       </div>
     </section>
 
-    <section>
+    <section class="form_section">
       <h3 class="info_title">Tell me about you</h3>
       <form class="info" action="#" method="post">
         <fieldset class="data">
-          <div>
-            <label for="name">Name</label>
-            <input required id="name" name="name" type="text" placeholder="Neville">
+          <div class="data_container">
+            <label class="info_label" for="name">Name</label>
+            <input class="info_input" required id="name" name="name" type="text" placeholder="Neville">
           </div>
-          <div>
-              <label for="lastName">Family name</label>
-              <input required id="lastName" name="lastName" type="text" placeholder="Longbottom">
+          <div class="data_container">
+              <label class="info_label" for="lastName">Family name</label>
+              <input class="info_input" required id="lastName" name="lastName" type="text" placeholder="Longbottom">
           </div>
-          <div>
-              <label for="phoneNumber">Muggle phone-thingy number</label>
-              <input required id="phoneNumber" name="phoneNumber" type="number" placeholder="Whateverthatis number" minlength="9">
+          <div class="data_container">
+              <label class="info_label" for="phoneNumber">Muggle phone-thingy number</label>
+              <input class="info_input" required id="phoneNumber" name="phoneNumber" type="number" placeholder="Six-three...something?" minlength="9">
           </div>
-          <div>
-              <label for="gitHub">GitHub thingamajig</label>
-              <input id="gitHub" name="GitHub" type="text" placeholder="@username" pattern="^@[^\s]+">
+          <div class="data_container">
+              <label class="info_label" for="gitHub">GitHub thingamajig</label>
+              <input class="info_input" id="gitHub" name="GitHub" type="text" placeholder="@username" pattern="^@[^\s]+">
           </div>
         </fieldset>
-        <fieldset class="message">
-          <img src="images/quill-icon.png" alt="Quill icon" title="Write to me!"/>
-          <label for="">Send me an owl!</label>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
 
-          <img src="images/owl-icon.png" alt="Owl icon" title="Choose a screech owl"/>
-          <input type="button" value="submit" name="submit"/>
+        <fieldset class="message_section">
+          <div class="message_container">
+            <img class="message_img" src="images/quill-icon.png" alt="Quill icon" title="Write to me!"/>
+            <label class="message_label" for="">Send me an owl!</label>
+            <textarea class="message" name="" id="" cols="30" rows="10"></textarea>
+          </div>
+
+          <div class="send_container">
+            <input type="button" value="Send" name="submit"/>
+            <img class="owl_icon" src="images/owl-icon.png" alt="Owl icon" title="Choose a screech owl"/>
+            <img class="owl_icon" src="images/owl-icon.png" alt="Owl icon" title="Choose a screech owl"/>
+            <img class="owl_icon" src="images/owl-icon.png" alt="Owl icon" title="Choose a screech owl"/>
+          </div>
         </fieldset>
       </form>
     </section>
   </main>
 
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div>
       <span class="authorship">Made with 💜 by Clara Miranda Zapata</span>
     </div>
@@ -171,6 +178,6 @@
         <img class="social_logo" src="images/github-logo.png" alt="GitHub logo" title="Browse more of my projects"/>
       </a>
     </div>
-  </footer>
+  </footer> -->
 </body>
 </html>
