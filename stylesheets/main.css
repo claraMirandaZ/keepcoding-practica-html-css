@@ -121,6 +121,102 @@ img {
   text-align: justify;
 }
 
+/* Section: skills */
+.skills_section {
+  background-color: var(--intense-bronze);
+  padding: 0.5rem;
+}
+
+.skills_title {
+  color: var(--cobalt-blue);
+  font-family: var(--gochi-hand);
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.skill_article {
+  display: flex;
+  align-items: center;
+}
+
+.skill_img {
+  height: 35px;
+  padding: 3px;
+}
+
+.skill_name {
+  color: var(--maastricht-blue);
+  margin: 0rem 0.5rem;
+  font-size: 12px;
+}
+
+.skill_container {
+  width: 100%;
+  background-color: #E6E6FA;
+  margin: 0px 6px;
+}
+
+.skill {
+  text-align: right;
+  padding: 8px 0px 8px 0px;
+}
+
+.potion {
+  width: 75%; 
+  background-color: #483D8B;
+  ;
+}
+
+.divination {
+  width: 50%;
+  background-color: #7B68EE;
+}
+
+.quidditch {
+  width: 25%;
+  background-color: #663399;
+}
+
+.dark {
+  width: 5%;
+  background-color: #4B0082;
+}
+
+.quibbler {
+  width: 90%;
+  background-color: #9370DB;
+}
+
+/* Section: where */
+.where_section {
+  background-color: var(--ochre-yellow);
+  padding: 8px;
+}
+
+.where_title {
+  color: var(--cobalt-blue);
+  font-family: var(--gochi-hand);
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+
+.where_container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.where {
+  color: var(--cobalt-blue);
+  margin: 0.23rem 0.3rem 0rem 0.5rem;
+  font-size: 14px;
+}
+
+.where_img {
+  height: 35px;
+  padding: 5px;
+}
+
 /* *************************** */
 /*        MEDIAQUERIES         */
 /* *************************** */
