@@ -1,4 +1,6 @@
-/* CSS variables */
+/* *************************** */
+/*          VARIABLES          */
+/* *************************** */
 :root {
   /* Ravenclaw color palette */
   --maastricht-blue: #0e1a40;
@@ -18,11 +20,28 @@ img {
 }
 /* ////////////////////////////////////////////////// */
 
+/* Header */
 .header {
   background-color: var(--ochre-yellow);
   border-bottom: solid 3px var(--covert-black);
   display: flex;
   justify-content: space-between;
+}
+
+.logo_container {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+/* .logo {
+  height: 50px;
+} */
+
+.menus_container {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  display: flex;
 }
 
 .navbar {
@@ -48,22 +67,6 @@ img {
   text-decoration: underline;
 }
 
-.menus_container {
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  display: flex;
-}
-
-.logo_container {
-  display: flex;
-  align-items: center;
-  padding: 0.5rem 1rem;
-}
-
-/* .logo {
-  height: 50px;
-} */
-
 .hamburger_menu {
   display: block;
   align-self: center;
@@ -79,6 +82,7 @@ img {
   background-color: var(--maastricht-blue);
 }
 
+/* Main. Hero */
 .hero {
   background-image: url(../images/lovegood-residence.png);
   background-repeat: no-repeat;
@@ -99,7 +103,27 @@ img {
   font-size: 2rem;
 }
 
-/* Mediaqueries */
+/* Section: about */
+.about {
+  background-color: var(--maastricht-blue);
+  padding: 8px;
+}
+
+.about_title {
+  color: var(--intense-bronze);
+  font-family: var(--gochi-hand);
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+
+.bio {
+  color: var(--ochre-yellow);
+  text-align: justify;
+}
+
+/* *************************** */
+/*        MEDIAQUERIES         */
+/* *************************** */
 @media screen and (min-width: 576px) {
   /* .logo {
     height: 75px;
