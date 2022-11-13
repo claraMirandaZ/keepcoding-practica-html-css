@@ -119,6 +119,7 @@ main {
 .bio {
   color: var(--ochre-yellow);
   text-align: justify;
+  margin-bottom: 8px;
 }
 
 /* Section: skills */
@@ -301,7 +302,24 @@ main {
 }
 
 /* Footer */
+.footer {
+  background-color: var(--cobalt-blue);
+  display: grid;
+  justify-items: center;
+}
 
+.social_logo {
+  margin-top: 0.75rem;
+  height: 35px;
+  padding: 5px;
+}
+
+.authorship {
+  color: var(--ochre-yellow);
+  font-size: 12px;
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+}
 
 /* *************************** */
 /*        MEDIAQUERIES         */
