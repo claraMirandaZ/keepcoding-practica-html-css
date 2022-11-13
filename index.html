@@ -48,7 +48,7 @@
 
     <!-- Bio -->
     <article class="about">
-      <h3 class="about_title">About me</h3>
+      <h3 id="bio" class="about_title">About me</h3>
       <p class="bio">Hey there...! My name is Luna Lovegood and I am a witch. Only daughter of Xenophilius and Pandora Lovegood, my mother accidentally died while experimenting with spells when I was nine and thus I was raised by my father, who's the editor of a magazine called The Quibbler. I live in a rook-like house near the village of Ottery St. Catchpole in Devonshire, England, but attended Hogwarts School of Witchcraft and Wizardry. There, I was sorted into Ravenclaw House, whose members are characterised by their wit, learning, and wisdom.</p>
       <p class="bio">
       During my school years, I met Harry Potter and I know at first he found me rather odd, but was grateful that I was one of the few people to believe his story that Lord Voldemort had returned. He really sympathised with the loss my mother and my status as an outcast.
@@ -67,13 +67,13 @@
 
     <!-- Skills -->
     <section class="skills_section">
-      <h3 class="skills_title">Magical abilities</h3>
+      <h3 id="skills" class="skills_title">Magical abilities</h3>
 
       <article class="skill_article">
       <img class="skill_img" src="images/potion-icon.png" alt="Potion icon" title="A love potion"/>
         <span class="skill_name">Potion making</span>
         <div class="skill_container">
-          <div class="skill potion"></div>
+          <div class="skill potions"></div>
         </div>
       </article>
 
@@ -147,24 +147,25 @@
 
     <!-- Form (contact) -->
     <section class="form_section">
-      <h3 class="info_title">Tell me about you</h3>
-      <form class="info" action="#" method="post">
+      <h3 id="contact" class="info_title">Tell me about you</h3>
+      <form class="info" action="contact.html" method="post">
         <fieldset class="data">
           <div class="data_container">
             <label class="info_label" for="name">Name</label>
-            <input class="info_input" required id="name" name="name" type="text" placeholder="Neville">
+            <input required class="info_input"  id="name" name="name" type="text" placeholder="Neville">
           </div>
           <div class="data_container">
               <label class="info_label" for="lastName">Family name</label>
-              <input class="info_input" required id="lastName" name="lastName" type="text" placeholder="Longbottom">
+              <input required class="info_input" id="lastName" name="lastName" type="text" placeholder="Longbottom">
           </div>
           <div class="data_container">
               <label class="info_label" for="phoneNumber">Muggle phone-thingy number</label>
-              <input class="info_input" required id="phoneNumber" name="phoneNumber" type="number" placeholder="Six-three...something?" minlength="9">
+              <input required class="info_input" id="phoneNumber" name="phoneNumber" type="number" placeholder="Six-three...something?" minlength="9">
           </div>
           <div class="data_container">
               <label class="info_label" for="gitHub">GitHub thingamajig</label>
-              <input class="info_input" id="gitHub" name="GitHub" type="text" placeholder="@username" pattern="^@[^\s]+">
+              <!-- Regex explanation in documents folder -->
+              <input required class="info_input" id="gitHub" name="GitHub" type="text" placeholder="@username" pattern="^@(?=[a-zA-Z0-9._]{1,38}$)(?!.*[_.]{2})[^_.].*[^_.]$">
           </div>
         </fieldset>
 
@@ -174,11 +175,11 @@
             <label class="message_label" for="">Send me an owl!</label>
           </div>
 
-          <textarea class="message" name="" id="" cols="30" rows="10"></textarea>
+          <textarea required class="message" name="message" id="text_area" maxlength="180" rows="12" placeholder="A maximum of 180 characters"></textarea>
 
           <div class="send_container">
             <img class="owl_icon" src="images/owl-icon.png" alt="Owl icon" title="Choose a screech owl"/>
-            <input class="send_button" type="button" value="Fly!" name="submit"/>
+            <input class="send_button" type="submit" value="Fly!" name="send"/>
           </div>
         </fieldset>
       </form>

@@ -161,30 +161,29 @@ main {
   padding: 8px 0px 8px 0px;
 }
 
-.potion {
-  width: 75%; 
+.potions {
   background-color: #483D8B;
-  ;
+  animation: skillPotions 3s forwards;
 }
 
 .divination {
-  width: 50%;
   background-color: #7B68EE;
+  animation: skillDivination 3s forwards;
 }
 
 .quidditch {
-  width: 25%;
   background-color: #663399;
+  animation: skillQuidditch 3s forwards;
 }
 
 .dark {
-  width: 5%;
   background-color: #4B0082;
+  animation: skillDark 4s forwards;
 }
 
 .quibbler {
-  width: 90%;
   background-color: #9370DB;
+  animation: skillQuibbler 3s forwards;
 }
 
 /* Section: where */
@@ -222,7 +221,7 @@ main {
 }
 
 .info_title {
-  color: var(--ochre-yellow);
+  color: var(--cobalt-blue);
   font-family: var(--shrikhand);
   font-size: 1.5rem;
   text-align: center;
@@ -233,6 +232,7 @@ main {
 .data {
   display: flex;
   flex-direction: column;
+  margin-bottom: 25px;
 }
 
 .data_container {
@@ -276,10 +276,19 @@ main {
   font-size: 1.5rem;
 }
 
+.message::placeholder {
+  color: var(--maastricht-blue);
+  opacity: 0.5;
+  font-family: Helvetica, sans-serif;
+  font-style: italic;
+  padding: 4px;
+}
+
 .send_container {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-top: 8px;
 }
 
 .owl_icon {
@@ -319,6 +328,54 @@ main {
   font-size: 12px;
   margin-top: 1rem;
   margin-bottom: 0.75rem;
+}
+
+/* *************************** */
+/*          KEYFRAMES          */
+/* *************************** */
+@keyframes skillPotions {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes skillDivination {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes skillQuidditch {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 25%;
+  }
+}
+
+@keyframes skillDark {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 3%;
+  }
+}
+
+@keyframes skillQuibbler {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
 }
 
 /* *************************** */
