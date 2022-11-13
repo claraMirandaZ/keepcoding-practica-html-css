@@ -17,3 +17,5 @@ According to the form validation messages on Join Github page,
        username is 1-38 characters long
 
 /^@(?=[a-zA-Z0-9._]{1,38}$)(?!.*[_.]{2})[^_.].*[^_.]$/
+
+<!-- https://projects.lukehaas.me/regexhub/ -->

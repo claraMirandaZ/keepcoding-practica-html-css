@@ -70,40 +70,50 @@
       <h3 id="skills" class="skills_title">Magical abilities</h3>
 
       <article class="skill_article">
-      <img class="skill_img" src="images/potion-icon.png" alt="Potion icon" title="A love potion"/>
-        <span class="skill_name">Potion making</span>
+        <div class="skill_description">
+          <img class="skill_img" src="images/potion-icon.png" alt="Potion icon" title="A love potion"/>
+          <span class="skill_name">Potion making</span>
+        </div>
         <div class="skill_container">
           <div class="skill potions"></div>
         </div>
       </article>
 
       <article class="skill_article">
-      <img class="skill_img" src="images/crystal-ball-icon.png" alt="Crystal ball icon" title="The art of divination"/>
-        <span class="skill_name">Divination</span>
+        <div class="skill_description">
+          <img class="skill_img" src="images/crystal-ball-icon.png" alt="Crystal ball icon" title="The art of divination"/>
+          <span class="skill_name">Divination</span>
+        </div>
         <div class="skill_container">
           <div class="skill divination"></div>
         </div>
       </article>
 
       <article class="skill_article">
-      <img class="skill_img" src="images/snitch-icon.png" alt="Snitch icon" title="The slippery snitch"/>
-        <span class="skill_name">Quidditch</span>
+        <div class="skill_description">
+          <img class="skill_img" src="images/snitch-icon.png" alt="Snitch icon" title="The slippery snitch"/>
+          <span class="skill_name">Quidditch</span>
+        </div>
         <div class="skill_container">
           <div class="skill quidditch"></div>
         </div>
       </article>
 
       <article class="skill_article">
-      <img class="skill_img" src="images/dark-mark-icon.png" alt="Dark mark icon" title="Only Death eaters use this..."/>
-        <span class="skill_name">Dark Arts</span>
+        <div class="skill_description">
+          <img class="skill_img" src="images/dark-mark-icon.png" alt="Dark mark icon" title="Only Death eaters use this..."/>
+          <span class="skill_name">Dark Arts</span>
+        </div>
         <div class="skill_container">
           <div class="skill dark"></div>
         </div>
       </article>
 
       <article class="skill_article">
-      <img class="skill_img" src="images/daily-prophet-icon.png" alt="Newspaper icon" title="The Quibbler"/>
-        <span class="skill_name">Quibbler editorial management</span>
+        <div class="skill_description">
+          <img class="skill_img" src="images/daily-prophet-icon.png" alt="Newspaper icon" title="The Quibbler"/>
+          <span class="skill_name">Quibbler editorial management</span>
+        </div>
         <div class="skill_container">
           <div class="skill quibbler"></div>
         </div>
@@ -160,7 +170,7 @@
           </div>
           <div class="data_container">
               <label class="info_label" for="phoneNumber">Muggle phone-thingy number</label>
-              <input required class="info_input" id="phoneNumber" name="phoneNumber" type="number" placeholder="Six-three...something?" minlength="9">
+              <input required class="info_input" id="phoneNumber" name="phoneNumber" type="number" placeholder="Six-three...something?" minlength="9" pattern="/^\+?(\d.*){3,}$/">
           </div>
           <div class="data_container">
               <label class="info_label" for="gitHub">GitHub thingamajig</label>

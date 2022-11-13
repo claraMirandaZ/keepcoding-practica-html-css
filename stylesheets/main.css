@@ -106,14 +106,14 @@ main {
 /* Section: about */
 .about {
   background-color: var(--maastricht-blue);
-  padding: 8px;
+  padding: 8px 20px;
 }
 
 .about_title {
   color: var(--intense-bronze);
   font-family: var(--gochi-hand);
   font-size: 1.5rem;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .bio {
@@ -124,19 +124,26 @@ main {
 
 /* Section: skills */
 .skills_section {
-  padding: 0.5rem;
+  padding: 8px 20px;
 }
 
 .skills_title {
   color: var(--cobalt-blue);
   font-family: var(--gochi-hand);
   font-size: 1.5rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 8px;
 }
 
 .skill_article {
   display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.skill_description {
+  display: flex;
   align-items: center;
+  margin-left: 25px;
 }
 
 .skill_img {
@@ -151,13 +158,16 @@ main {
 }
 
 .skill_container {
-  width: 100%;
+  width: 90%;
   background-color: #E6E6FA;
-  margin: 0px 6px;
+  align-self: center;
+  border-radius: 8px;
+  margin: 6px 0 6px 0;
 }
 
 .skill {
   text-align: right;
+  border-radius: 8px;
   padding: 8px 0px 8px 0px;
 }
 
@@ -188,7 +198,7 @@ main {
 
 /* Section: where */
 .where_section {
-  padding: 8px;
+  padding: 8px 20px;
 }
 
 .where_title {
@@ -217,7 +227,7 @@ main {
 
 /* Section: form */
 .form_section {
-  padding: 8px;
+  padding: 8px 20px;
 }
 
 .info_title {
