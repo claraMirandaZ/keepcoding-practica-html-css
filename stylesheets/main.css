@@ -256,12 +256,16 @@ main {
 
 .info_input {
   background-color: #E6E6FA;
+  width: 50%;
+  height: 18px;
+  border-radius: 10px;
 }
 
 .info_input::placeholder {
   color: var(--maastricht-blue);
   opacity: 0.5;
   font-style: italic;
+  padding: 8px;
 }
 
 /* Section: message */
@@ -284,6 +288,10 @@ main {
   color: var(--cobalt-blue);
   font-family: var(--gochi-hand);
   font-size: 1.5rem;
+}
+
+.message {
+  border-radius: 5px;
 }
 
 .message::placeholder {
@@ -392,9 +400,10 @@ main {
 /*        MEDIAQUERIES         */
 /* *************************** */
 @media screen and (min-width: 576px) {
-  /* .logo {
+  /* Header */
+  .logo {
     height: 75px;
-  } */
+  }
 
   .hamburger_menu {
     display: none;
@@ -406,8 +415,136 @@ main {
     align-items: center;
     padding: 0.50rem;
   }
-  
+
+  /* Main. Hero */
   .main_title {
     font-size: 3.5rem;
+  }
+
+  /* Section: about */
+  .about {
+    background-color: var(--maastricht-blue);
+    padding: 12px 50px;
+  }
+
+  .about_title {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+
+  .bio {
+    font-size: larger;
+    margin-bottom: 12px;
+  }
+
+  /* Section: skills */
+  .skills_section {
+    padding: 12px 50px;
+  }
+
+  .skills_title {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+
+  .skill_description {
+    margin-left: 50px;
+  }
+
+  .skill_img {
+    height: 50px;
+    padding: 5px;
+  }
+
+  .skill_name {
+    margin: 0rem 0.5rem;
+    font-size: larger;
+  }
+
+  .skill_container {
+    margin: 0;
+    height: 30px;
+  }
+
+  .skill {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+  }
+
+  /* Section: where */
+  .where_section {
+    padding: 12px 50px;
+  }
+
+  .where_title {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+
+  .where {
+    font-size: larger;
+  }
+
+  .where_img {
+    height: 50px;
+  }
+
+  /* Section: form */
+  .form_section {
+    padding: 12px 50px;
+  }
+
+  .info_title {
+    font-size: 2rem;
+    margin: 16px 0;
+  }
+
+  /* Form section: personal data */
+  .info_label {
+    font-size: larger;
+  }
+
+  .info_input {
+    height: 25px;
+  }
+
+  .info_input::placeholder {
+    font-size: medium;
+  }
+
+  /* Section: message */
+  .message_img {
+    height: 50px;
+  }
+
+  .message_label {
+    font-size: 2rem;
+  }
+
+  .message::placeholder {
+    font-size: larger;
+  }
+
+  .owl_icon {
+    height: 35px;
+    padding: 8px;
+  }
+
+  .send_button {
+    font-size: 25px;
+    width: 100px;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  /* Footer */
+  .social_logo {
+    height: 50px;
+  }
+
+  .authorship {
+    font-size: 20px;
+    margin-bottom: 1rem;
   }
 }
