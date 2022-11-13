@@ -14,12 +14,6 @@
   --shrikhand: 'Shrikhand', cursive;
 }
 
-/* ////////////////////////////////////////////////// */
-img {
-  width: 50px;
-}
-/* ////////////////////////////////////////////////// */
-
 /* Header */
 .header {
   background-color: var(--ochre-yellow);
@@ -34,9 +28,9 @@ img {
   padding: 0.5rem 1rem;
 }
 
-/* .logo {
+.logo {
   height: 50px;
-} */
+}
 
 .menus_container {
   padding: 0.5rem 1rem;
@@ -82,6 +76,12 @@ img {
   background-color: var(--maastricht-blue);
 }
 
+/* Main */
+main {
+  background: rgb(181,144,75);
+  background: linear-gradient(0deg, rgba(181,144,75,1) 0%, rgba(197,131,43,1) 100%); 
+}
+
 /* Main. Hero */
 .hero {
   background-image: url(../images/lovegood-residence.png);
@@ -123,7 +123,6 @@ img {
 
 /* Section: skills */
 .skills_section {
-  background-color: var(--intense-bronze);
   padding: 0.5rem;
 }
 
@@ -189,7 +188,6 @@ img {
 
 /* Section: where */
 .where_section {
-  background-color: var(--ochre-yellow);
   padding: 8px;
 }
 
@@ -219,7 +217,6 @@ img {
 
 /* Section: form */
 .form_section {
-  background-color: var(--cobalt-blue);
   padding: 8px;
 }
 
@@ -231,6 +228,7 @@ img {
   margin: 8px 0;
 }
 
+/* Form section: personal data */
 .data {
   display: flex;
   flex-direction: column;
@@ -241,7 +239,7 @@ img {
 }
 
 .info_label {
-  color: var(--intense-bronze);
+  color: var(--cobalt-blue);
   font-size: 14px;
 }
 
@@ -255,9 +253,15 @@ img {
   font-style: italic;
 }
 
+/* Section: message */
 .message_section {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.message_container {
+  display: flex;
+  align-items: center;
 }
 
 .message_img {
@@ -266,9 +270,15 @@ img {
 }
 
 .message_label {
-  color: var(--ochre-yellow);
+  color: var(--cobalt-blue);
   font-family: var(--gochi-hand);
   font-size: 1.5rem;
+}
+
+.send_container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .owl_icon {
@@ -276,9 +286,22 @@ img {
   padding: 5px;
 }
 
-.send_container {
-  display: flex;
+.send_button {
+  background-color: var(--cobalt-blue);
+  color: var(--intense-bronze);
+  font-family: var(--shrikhand);
+  font-size: 18px;
+  text-align: center;
+  width: 75px;
+  border: none;
+  border-radius: 50px 5px;
+  padding: 3px;
+  margin: 3px;
+  cursor: pointer;
 }
+
+/* Footer */
+
 
 /* *************************** */
 /*        MEDIAQUERIES         */
