@@ -61,3 +61,10 @@ Nuestro objetivo es construir un portfolio sobre nosotros, con las siguientes se
 - Las animaciones o interactividad propuesta deben realizarse **exclusivamente mediante técnicas CSS** sin el uso de librerías externas.
 
 - Tiene que entregarse en a traves de GitHub. No se valorará, pero un buen uso de commits será algo positivo. Una entrega en un solo commit no se suele valorar bien en entrevistas.
+
+<hr/>
+
+<div align=center>
+<p>Puedes ver el resultado final pinchando aquí ⤵️</p>
+<a href="https://claramirandaz.github.io/keepcoding-practica-html-css/" target="_blank"><img src="https://github.com/claraMirandaZ/keepcoding-practica-html-css/blob/main/images\antique-books-icon.png" alt="link-to-site"></a>
+</div>
